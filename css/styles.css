@@ -1,0 +1,123 @@
+:root{
+  --primary-color: #213448;
+  --secondary-color:#ECEFCA ;
+  --background-color: #547792;
+  --text-color: #000;
+  --border-radius: 10px; /* Bordes redondeados */
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+body{
+  background-color: var(--background-color);
+  margin:0;
+  color: var(--text-color);
+  font-family:Noto Sans;
+}
+/*header*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 20px;
+}
+
+/*nav*/
+nav{
+  display: block;
+  unicode-bidi: isolate;
+  background-color: var(--primary-color);
+}
+ul{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+li{
+  padding: 5px;
+  color: #000;
+}
+
+/*general*/
+section, article{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+aside {
+  width: 250px;
+  height: fit-content;
+  float: right;
+  margin-left: 20px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2, h3 {
+  font-weight: bold;
+  text-align: center;
+}
+a{
+  color: var(--background-color);
+}
+a:hover {
+  color: #077A7D;
+}
+/*img*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+/*Formulario*/
+.formulario{
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.formulario label{
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid var(--secondary-color);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
